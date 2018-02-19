@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gangelf.swoosh.SkillActivity">
+    tools:context="com.example.gangelf.swoosh.Controler.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -61,13 +61,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBeginnerClicked"
             android:text="@string/beginner"
             android:textColor="@android:color/white"
             android:textOff="@string/beginner"
@@ -75,12 +76,14 @@
             tools:text="Beginner" />
 
         <ToggleButton
+            android:id="@+id/ballerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onBallerClicked"
             android:text="@string/baller"
             android:textColor="@android:color/white"
             android:textOff="@string/baller"
@@ -90,7 +93,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishedBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -98,6 +101,7 @@
         android:layout_marginStart="8dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinishedClicked"
         android:text="@string/finish"
         android:textColor="@android:color/white"
         android:textSize="18sp"

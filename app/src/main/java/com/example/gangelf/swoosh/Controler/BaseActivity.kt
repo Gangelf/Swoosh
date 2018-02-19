@@ -1,4 +1,4 @@
-package com.example.gangelf.swoosh
+package com.example.gangelf.swoosh.Controler
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
